@@ -1,0 +1,111 @@
+@import "src/styles/colors";
+
+#OrganizationsPage {
+  .SearchBar {
+    width: 100%;
+    padding: 10px 15px;
+    background: $white;
+    box-shadow: $shadow;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+    .searchWrapper {
+      .ui.input {
+        width: 450px;
+
+        input {
+          color: $grey;
+          &:focus {
+            color: $green;
+            border-color: $green;
+          }
+        }
+      }
+    }
+  }
+
+  .OrganizationsList {
+    background: $white;
+    border-radius: 5px;
+    box-shadow: $shadow;
+    .header {
+      display: flex;
+      padding: 8px 10px;
+      background: $grey_2;
+      align-items: center;
+
+      .logo {
+        width: 50px;
+      }
+
+      .name {
+        width: 200px;
+        padding: 0 20px;
+      }
+
+      .description {
+        flex: 1 1 auto;
+        max-width: 50%;
+      }
+
+      .discount {
+        width: 150px;
+        text-align: center;
+      }
+    }
+
+    .OrganizationsListItem {
+      display: flex;
+      padding: 8px 10px;
+      align-items: center;
+      border-bottom: 1.5px solid $white_2;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+        }
+      }
+
+      .name {
+        width: 200px;
+        padding: 0 20px;
+      }
+
+      .description {
+        flex: 1 1 auto;
+        max-width: 50%;
+      }
+
+      .discount {
+        width: 150px;
+        text-align: center;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background: $grey_2op;
+      }
+    }
+
+    .empty {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: grey;
+      padding: 15px 0;
+    }
+  }
+}
